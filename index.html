@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Aroma - Youssef Itehda</title>
+
+    
+
+    <link rel="icon" href="https://cdn.dribbble.com/userupload/20907576/file/original-4e902c5bd2fd20baf9ba21c1bc346779.png?format=webp&resize=800x600&vertical=center" type="image/jpeg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Prata&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .btn-top {
+            position: fixed; bottom: 30px; right: 30px;
+            background-color: #1a1a1a; color: #ffbb48;
+            width: 50px; height: 50px; text-align: center; line-height: 50px;
+            border-radius: 50%; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 999; transition: 0.3s; text-decoration: none;
+        }
+        .btn-top:hover { background-color: #ffbb48; color: #1a1a1a; transform: translateY(-5px); }
+    </style>
+</head>
+<body>
+    <button class="theme-btn" onclick="toggleTheme()">☀️</button>
+
+    <div id="qrcode-badge">
+        <img src="qr-code.png" alt="Github QR">
+        <p><a href="https://github.com/Rx0-8x" target="_blank">My Github</a></p>
+    </div>
+
+    <header id="home">
+        <div class="navbar">
+            <div class="logo">L'Aroma<span>.</span></div>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#collection" >Collection</a></li>
+                    <li><a href="#details">Details</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+        </div>
+
+        <div class="hero-content">
+            <img src="photo.jpg" alt="Youssef Itehda" class="profile-pic">
+            <h1 style="text-shadow: 1px 2px 5px orange;">Scent of Soul</h1>
+            <p>Luxury fragrances designed to define your presence.</p>
+            <a href="#collection" class="btn-gold">Explore Collection</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section-padding">
+            <div class="container">
+                <article>
+                    <h2 class="section-title">The Essence</h2>
+                    <p><b><span style="font-size: 20px;">WELCOME to<span style="color:orange; "> L'Aroma</span>.</b></span> We bring you a curated selection of the world's most iconic scents. From our exclusive house blends to international designer masterpieces.</p>
+                    <p>In a world of imitations, trust is the ultimate luxury. L'Aroma is your premier destination for genuine, world-class fragrances. We meticulously select our collection from authorized distributors and renowned houses to <b><span style="color:orange">ensure that every bottle is 100% authentic.</span><b>We don't just sell perfume; we deliver peace of mind. Shop with confidence, knowing that the scent you fall in love with is the real deal."</p>
+                    <p style="color: #d35400; font-family: 'Prata', serif; font-size: 20px; margin-top: 20px; font-style: italic;">
+                        "Perfume is the key to our memories."
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="collection" class="bg-gray section-padding">
+            <div class="container">
+                
+                <div class="collection-header">
+                    <h2 class="section-title" style="margin-bottom:0;"  id="collection-outline">The Collection</h2>
+                    <label for="layout-switch" class="switch-btn" title="Toggle Layout">
+                        <i class="fas fa-th"></i> Switch View
+                    </label>
+                </div>
+
+                <input type="checkbox" id="layout-switch" class="layout-checkbox">
+
+                <div class="product-list">
+                    
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="https://perfumeonline.ca/cdn/shop/files/Bianco-latte_1024x1024.png?v=1722352770" alt="Bianco Latte">
+                        </div>
+                        <h3>Bianco Latte</h3>
+                        <p class="brand">Giardini Di Toscana</p>
+                        <span class="price">1,500 MAD</span>
+                        <a href="#" class="btn-text">Add to Cart</a>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="https://bluemercury.com/cdn/shop/files/variant_images-size-338floz-3508441001114-3_953c4b8c-893c-41ec-b58f-8bb870da41a5.jpg?v=1760465224&width=1200g" alt="Creed">
+                        </div>
+                        <h3>Creed Aventus</h3>
+                        <p class="brand">The House Of Creed</p>
+                        <span class="price">3,800 MAD</span>
+                        <a href="#" class="btn-text">Add to Cart</a>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="https://fimgs.net/mdimg/perfume-thumbs/dark-375x500.62615.2x.avif" alt="Heaven's Share ">
+                        </div>
+                        <h3>Heaven's Share </h3>
+                        <p class="brand">Killian's Share</p>
+                        <span class="price">5,000 MAD</span>
+                        <a href="#" class="btn-text">Add to Cart</a>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="https://foryou.ma/cdn/shop/files/IMG-6044.jpg?v=1703963589" alt="Phantom">
+                        </div>
+                        <h3>Phantom</h3>
+                        <p class="brand">Paco Rabanne</p>
+                        <span class="price">1,200 MAD</span>
+                        <a href="#" class="btn-text">Add to Cart</a>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="https://www.allbeauty.com/images?url=https://static.thcdn.com/productimg/original/14604982-1185265774365244.jpg&format=webp&auto=avif&width=1000&height=1000&fit=cover" alt="Stronger With You">
+                        </div>
+                        <h3>Stronger With You<br> Absolutely</h3>
+                        <p class="brand">Emporio Armani</p>
+                        <span class="price">1,200 MAD</span>
+                        <a href="#" class="btn-text">Add to Cart</a>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="https://media.sephora.eu/content/dam/digital/pim/published/J/JEAN_PAUL_GAULTIER/P3788002/44526-media_2.jpg?scaleWidth=undefined&scaleHeight=undefined&scaleMode=undefined"alt="La Belle">
+                        </div>
+                        <h3>La Belle EDP</h3>
+                        <p class="brand">Jean Paul Gaultier</p>
+                        <span class="price">980 MAD</span>
+                        <a href="#" class="btn-text">Add to Cart</a>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="https://fragrancemarket.com/cdn/shop/products/Yves-Saint-Laurent-Kouros-Mens-Eau-de-Toilette-Spray-3.3-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1752179952" alt="Kouros">
+                        </div>
+                        <h3>Kouros</h3>
+                        <p class="brand">Yves Saint Laurent</p>
+                        <span class="price">1200  MAD</span>
+                        <a href="#" class="btn-text">Add to Cart</a>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="https://ortoparisi.com/cdn/shop/files/OrtoParisi-Terroni-1080x1350-02REV.gif?v=1764081165&width=1646" alt="Teroni">
+                        </div>
+                        <h3>Teroni</h3>
+                        <p class="brand">Coreterno</p>
+                        <span class="price">2,000 MAD</span>
+                        <a href="#" class="btn-text">Add to Cart</a>
+                    </div>
+                    
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="https://www.yslbeautyus.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-ysl-us-Library/default/dw4c8a40a2/pdp/images/252YSL/BO%20EDP%20About%20Image.jpg?sw=1170&sh=1170&sm=cut&q=85" alt="Teroni">
+                        </div>
+                        <h3>Opium Le Parfum</h3>
+                        <p class="brand">Yves Saint Laurent</p>
+                        <span class="price">2,150MAD</span>
+                        <a href="#" class="btn-text">Add to Cart</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="details" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Fragrance Breakdown</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Perfume</th>
+                                <th>Key Notes</th>
+                                <th>Intensity</th>
+                                <th>Type</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Bianco Latte</td><td>Caramel, Honey, Vanilla</td><td>Intense</td><td>Gourmand</td><td>1,500 MAD</td></tr>
+                            <tr><td>Creed Aventus</td><td>pineapple & birch</td><td>Intense</td><td>Fresh</td><td>3,800 MAD</td></tr>
+                            <tr><td>Heaven's Share </td><td>Spicy Oud</td><td>Strong</td><td>Woody</td><td>5,000 MAD</td></tr>
+                            <tr><td>Paco Rabane Phantom</td><td>Lavender & Lemon</td><td>Medium</td><td>Futuristic</td><td>1,200 MAD</td></tr>
+                            <tr><td>Stronger With YOU Absolutely </td><td>Rum & Cedar</td><td>Very Strong</td><td>Warm Spicy</td><td>1,200 MAD</td></tr>
+                            <tr><td>La Belle EDP</td><td>Pear & Vanilla</td><td>Intense</td><td>Oriental</td><td>980 MAD</td></tr>
+                            <tr><td>Kouros</td><td>Coriander & Leather</td><td>Beast Mode</td><td>Classic</td><td>1,200  MAD</td></tr>
+                            <tr><td>Arabians Tonka</td><td>Saffron, Bergamot</td><td>Strong</td><td>Sophisticated</td><td>1,400 MAD</td></tr>
+                            <tr><td>Teroni</td><td>Raspberry</td><td>chill</td><td>Volcanic</td><td>2,000 MAD</td></tr>
+                            <tr><td>Opium</td><td>Pear</td><td>intense</td><td>Gourmand</td><td>2,150 MAD</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-dark section-padding">
+            <div class="container text-center">
+                <h2 class="section-title text-white">Order Now</h2>
+                <a href="mailto:youssefit8@gmail.com" class="btn-gold" style="margin-top: 20px;">Send Order via Email</a> 
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="copyright">&copy; 2026 - Youssef Itehda</p> 
+            <span style="color: gray"> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp gmail:</span>
+                <a href="mailto:youssefitf8@gmail.com " style="color: rgb(189, 138, 17);">youssefit8@gmail.com</a>
+            
+            <div class="ascii-art">
+<pre>
+__   __  ___    _   _   ____   ____   _____   _____ 
+\ \ / / / _ \  | | | | / ___| / ___| | ____| |  ___|
+ \ V / | | | | | | | | \___ \ \___ \ |  _|   | |_   
+  | |  | |_| | | |_| |  ___)   ___) | |___  |  _|  
+  |_|   \___/   \___/  |____/ |____/ |_____| |_|    
+</pre>
+            </div>
+        </div>
+
+        
+    </footer>
+    <a href="#home" class="btn-top">⬆</a>
+    <script>
+    function toggleTheme() {
+        const body = document.body;
+        const btn = document.querySelector('.theme-btn');
+        
+       
+        body.classList.toggle('light-mode');
+        
+        
+        if (body.classList.contains('light-mode')) {
+            btn.innerHTML = "🌙"; 
+        } else {
+            btn.innerHTML = "☀️"; 
+        }
+    }
+</script>
+
+</body>
+
+</html>
